@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&family=Manrope:wght@800&family=Outfit:wght@400;700&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+button {
+  border: none;
+  background: transparent;
+}

@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 1112px;
+  height: 112px;
+  justify-content: space-between;
+  margin: auto;
+  gap: 30px;
+  border-bottom: 0.2px solid hsl(220, 14%, 75%);
+}
+
+.logo {
+  padding-right: 3vw;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  max-width: 390px;
+  gap: 30px;
+  font-weight: 200;
+  font-size: 15px;
+}
+
+.options {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 46px;
+  padding-right: 0px;
+}
