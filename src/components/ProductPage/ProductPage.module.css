@@ -27,29 +27,15 @@
 
 .thumbnailPanel > button {
   position: relative;
-  
 }
 
 .thumbnailPanel > button :hover {
-  filter: grayscale(1)
+  filter: grayscale(1);
 }
 
-.selected{
+.selected {
   border: 2px solid #ff791a;
 }
-/* 
-.overlay {
-  min-height: 89px;
-  height: 89px;
-  width: 89px;
-  position: absolute;
-  top: 0;
-  height: inherit;
-  border-radius: 10px;
-  background: white;
-  opacity: 50%;
-} */
-
 
 .detailsPanel {
   margin-left: 80px;
@@ -73,13 +59,12 @@
   color: grey;
 }
 
-.priceInfo{
+.priceInfo {
   display: flex;
   gap: 16px;
   align-items: center;
   margin-top: 38px;
 }
-
 
 .discount {
   width: 50px;
@@ -91,5 +76,40 @@
   align-items: center;
   justify-content: center;
   font-weight: 600;
-  color:hsl(25, 100%, 55%)
+  color: hsl(25, 100%, 55%);
+}
+
+.cartinfo{
+  display: flex;
+  gap: 14px;
+}
+
+.itemsincart {
+  min-width: 156px;
+  width: 156px;
+  height: 54px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: hsl(223, 64%, 98%);
+}
+
+.addToCart {
+  width: 258px;
+  height: 54px;
+  border-radius: 10px;
+  background: hsl(25, 100%, 55%);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.addToCart >img {
+  fill: white;
 }

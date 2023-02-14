@@ -1,12 +1,14 @@
 import { useState } from "react";
 import styles from "./Navbar.module.css";
 import { Logo, CartIcon, Profile } from "./assets";
+import { useSelector } from "react-redux";
 export const Navbar = () => {
 
   const [isActive, setIsActive] = useState(true)
   const handleClick = event => {
     setIsActive(current => !current)
   }
+  const count = useSelector((state)=> state.itemsInCart.value)
 
   return (
     <nav className={styles.container}>
@@ -24,6 +26,7 @@ export const Navbar = () => {
       <div className={styles.options}>
         <button onClick={handleClick}>
           <img src={CartIcon.img} alt={CartIcon.alt}></img>
+          <div>{count}</div>
         </button>
         <button onClick={handleClick}>
           <img src={Profile.img} width={"50px"}alt={Profile.alt}></img>
