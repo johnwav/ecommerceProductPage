@@ -79,7 +79,15 @@
   color: hsl(25, 100%, 55%);
 }
 
+.oldPrice {
+  margin-top: 16px;
+  font-size: 16px;
+  color: grey;
+  text-decoration: line-through;
+}
+
 .cartinfo {
+  margin-top: 20px;
   display: flex;
   gap: 14px;
 }
@@ -124,5 +132,3 @@
   top: 0;
   z-index: 1;
 }
-
-

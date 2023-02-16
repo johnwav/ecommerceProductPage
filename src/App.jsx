@@ -1,7 +1,6 @@
 import "./App.css";
 import { Navbar } from "./components/Navbar";
 import { ProductPage } from "./components/ProductPage";
-import { ProductPreview } from "./components/ProductPreview";
 
 function App() {
   return (
@@ -10,11 +9,6 @@ function App() {
         <Navbar />
         <ProductPage />
       </div>
-      {/* <div className="preview">
-
-        <ProductPreview />
-
-      </div> */}
     </div>
   );
 }

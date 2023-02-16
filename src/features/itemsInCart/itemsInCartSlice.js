@@ -20,7 +20,9 @@ export const itemsInCartSlice = createSlice({
 
     incrementByAmout: (state, action) => {
       state.value += action.payload;
-    },   
+    },
+
+    
   },
 });
 
