@@ -52,10 +52,11 @@
 
 .cartdropdown {
   width: 356px;
+  border-radius: 15px;
   height: 236px;
   background-color: white;
   position: absolute;
-  top: 112px;
+  top: 108px;
   right: 0px;
   display: flex;
   flex-direction: column;
@@ -74,14 +75,43 @@
 
 .checkoutBtn {
   width: 314px;
-  height: 56px;
+  height: 54px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 15px;
   background: hsl(26, 100%, 55%);
+  margin-top: 20px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .toggle {
   display: none;
+}
+
+
+.line {
+  width: inherit;
+  height: 1px;
+  background-color: hsl(220, 14%, 75%);
+  margin-top: 20px;
+}
+
+.cartProductInfo {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-top: 24px;
+ height: 50px;
+ color: grey;
+}
+
+.cartProductInfo > img {
+  border-radius: 8px;
+}
+
+.product > p > strong {
+  color: black
 }

@@ -27,7 +27,6 @@ export const ProductPreview = (props) => {
 
   return (
     <>
-    {console.log(images.length, productImage)}
 
       <div className={styles.container}>
         <div className={styles.top}>

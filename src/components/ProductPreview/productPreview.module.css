@@ -40,9 +40,10 @@
 
 .backdrop {
   position: relative;
-  /* width: 100vw; */
+  /* max-width: 1400px; */
   height: 900px;
   background-color: grey;
+  margin: auto;
   opacity: 80%;
   top: 0;
 }

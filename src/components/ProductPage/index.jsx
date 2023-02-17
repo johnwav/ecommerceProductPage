@@ -85,7 +85,7 @@ export const ProductPage = (props) => {
       {pagestatecount ? (
         <div className={styles.preview}>
           <ProductPreview />
-          {console.log(pagestatecount)}
+      
         </div>
       ) : (
         ""

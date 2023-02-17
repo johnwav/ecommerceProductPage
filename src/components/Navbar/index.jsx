@@ -2,7 +2,8 @@ import { useState } from "react";
 import styles from "./Navbar.module.css";
 import { Logo, CartIcon, Profile } from "./assets";
 import { useSelector } from "react-redux";
-import { data } from "../../app/data.js";
+import { data, images } from "../../app/data.js";
+import dlt from "../../assets/icon-delete.svg";
 export const Navbar = () => {
   const [isActive, setIsActive] = useState(true);
   const handleClick = (event) => {
@@ -36,22 +37,27 @@ export const Navbar = () => {
       <div className={isActive ? styles.toggle : styles.cartdropdown}>
         <div className={styles.cartLabel}>Cart</div>
         <div className={styles.line}></div>
-        {count > 0 ? (
-          <div className={styles.cartInfo}>
-            <div>image</div>
+        <div className={styles.cartInfo}>
+          {count > 0 ? (
             <div>
-              <p>{data.title}</p>
-              <p>
-                ${data.price} x{count} <strong>${data.price * count}</strong>
-              </p>
-              <div>dlt</div>
-            </div>
-          </div>
-        ) : (
-          <div>Your cart is empty.</div>
-        )}
+              <div className={styles.cartProductInfo}>
+                <img width={50} src={images[0].image}></img>
 
-        <button className={styles.checkoutBtn}>Checkout</button>
+                <div className={styles.product}>
+                  <p>{data.title}</p>
+                  <p>
+                    ${data.price} x{count}{" "}
+                    <strong>${data.price * count}</strong>
+                  </p>
+                </div>
+                <img src={dlt}></img>
+              </div>
+              <button className={styles.checkoutBtn}>Checkout</button>
+            </div>
+          ) : (
+            <div>Your cart is empty.</div>
+          )}
+        </div>
       </div>
     </nav>
   );
