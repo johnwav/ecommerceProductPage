@@ -40,7 +40,7 @@
 
 .backdrop {
   position: relative;
-  /* max-width: 1400px; */
+  width: 100dvw;
   height: 900px;
   background-color: grey;
   margin: auto;

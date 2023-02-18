@@ -128,7 +128,7 @@
 }
 .preview {
   position: absolute;
-  width: 100vw;
+  width: 100lvw;
   top: 0;
   z-index: 1;
 }
