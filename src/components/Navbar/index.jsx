@@ -55,7 +55,7 @@ export const Navbar = () => {
               <button className={styles.checkoutBtn}>Checkout</button>
             </div>
           ) : (
-            <div>Your cart is empty.</div>
+            <div className={styles.cartProductInfo} >Your cart is empty.</div>
           )}
         </div>
       </div>
