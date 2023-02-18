@@ -31,16 +31,16 @@ export const ProductPreview = (props) => {
       <div className={styles.container}>
         <div className={styles.top}>
           <button className={styles.close} onClick={() => dispatch(toggle())}>
-            <img src={close} width={20}></img>
+            <img src={close} width={20} alt="close"></img>
           </button>
 
           <button className={styles.left} onClick={() => decrement()}>
-            <img src={prev}></img>
+            <img src={prev} alt="previous"></img>
           </button>
           <button className={styles.right} onClick={() => increment()}>
             <img src={next}></img>
           </button>
-          <img src={images[productImage].image} width={446}></img>
+          <img src={images[productImage].image} width={446} alt="next"></img>
           <div className={styles.thumbnailPan}>
             {images.map((image) => (
               <button key={image.id} onClick={() => handleClick(image.id)}>
@@ -48,6 +48,7 @@ export const ProductPreview = (props) => {
                   className={productImage === image.id ? styles.selected : ""}
                   width={89}
                   src={image.thumbnail}
+                  alt="product"
                 ></img>
               </button>
             ))}
