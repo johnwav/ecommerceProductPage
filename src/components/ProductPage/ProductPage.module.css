@@ -2,7 +2,7 @@
   max-width: 1112px;
   margin: auto;
   display: flex;
-  padding-top: 82px;
+  padding-top: 52px;
   padding-inline: 40px;
   gap: 56px;
 }
@@ -58,7 +58,7 @@
   font-size: 2.5rem;
   font-weight: 800;
   margin-top: 1.25rem;
-  margin-bottom: 3.125rem;
+  margin-bottom: 3rem;
 }
 
 .subtitle {

@@ -71,7 +71,6 @@ export const ProductPage = (props) => {
           <button className={styles.right} onClick={() => incrementimg()}>
             <img src={next}></img>
           </button>
-          
         </div>
 
         <div className={styles.detailsPanel}>
