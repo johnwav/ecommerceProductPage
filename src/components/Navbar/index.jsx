@@ -31,7 +31,7 @@ export const Navbar = () => {
       <div className={styles.options}>
         <button onClick={handleClick}>
           <img src={CartIcon.img} alt={CartIcon.alt}></img>
-          <div>{count}</div>
+          {count > 0 ? <div>{count}</div> : ""}
         </button>
         <button onClick={handleClick}>
           <img src={Profile.img} width={"50px"} alt={Profile.alt}></img>
@@ -45,7 +45,7 @@ export const Navbar = () => {
           {count > 0 ? (
             <div>
               <div className={styles.cartProductInfo}>
-                <img width={50} src={images[0].image}></img>
+                <img width={50} src={images[0].image} alt="cart"></img>
 
                 <div className={styles.product}>
                   <p>{data.title}</p>
