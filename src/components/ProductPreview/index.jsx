@@ -21,8 +21,6 @@ export const ProductPreview = (props) => {
     }
   };
 
-
-
   const dispatch = useDispatch();
 
   return (

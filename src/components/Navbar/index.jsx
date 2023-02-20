@@ -1,8 +1,9 @@
 import { useState } from "react";
 import styles from "./Navbar.module.css";
-import { Logo, CartIcon, Profile } from "./assets";
+import { Logo, CartIcon, Profile, Bars } from "./assets";
 import { useSelector } from "react-redux";
 import { data, images } from "../../app/data.js";
+
 import dlt from "../../assets/icon-delete.svg";
 export const Navbar = () => {
   const [isActive, setIsActive] = useState(true);
@@ -14,6 +15,9 @@ export const Navbar = () => {
   return (
     <nav className={styles.container}>
       <ul className={styles.nav}>
+        <button className={styles.menu}>
+          <img src={Bars.img} alt={Bars.alt}></img>
+        </button>
         <button className={styles.logo}>
           <img src={Logo.img} alt={Logo.alt}></img>
         </button>
@@ -55,10 +59,12 @@ export const Navbar = () => {
               <button className={styles.checkoutBtn}>Checkout</button>
             </div>
           ) : (
-            <div className={styles.cartProductInfo} >Your cart is empty.</div>
+            <div className={styles.empty}>Your cart is empty.</div>
           )}
         </div>
       </div>
+
+ 
     </nav>
   );
 };
