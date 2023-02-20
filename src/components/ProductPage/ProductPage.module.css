@@ -3,11 +3,16 @@
   margin: auto;
   display: flex;
   padding-top: 82px;
-  padding-inline: 46px;
+  padding-inline: 40px;
+  gap: 56px;
 }
 
 .container > div {
   width: 50%;
+}
+
+.mobilevisualsPanel{
+  display: none;
 }
 
 .visualsPanel > button > img {
@@ -38,7 +43,8 @@
 }
 
 .detailsPanel {
-  margin-left: 80px;
+  padding-inline: 20px;
+  width: max-content;
 }
 
 .vendor {
@@ -49,14 +55,15 @@
 }
 
 .title {
-  font-size: 34px;
+  font-size: 2.5rem;
   font-weight: 800;
-  margin-top: 20px;
-  margin-bottom: 50px;
+  margin-top: 1.25rem;
+  margin-bottom: 3.125rem;
 }
 
 .subtitle {
   color: grey;
+  line-height: 30px;
 }
 
 .priceInfo {
@@ -133,17 +140,104 @@
   z-index: 1;
 }
 
-@media only screen and (max-width: 1000px) {
-  .productPage{
+@media only screen and (max-width: 845px) {
+  .productPage {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
   }
+
+  .vendor {
+    margin-top: 25px;
+  }
+
   .container {
     flex-direction: column;
+    padding: 0;
+    gap: 0px;
   }
   .container > div {
     width: fit-content;
   }
+
+  .detailsPanel {
+    margin: 0;
+    padding-inline: 30px;
+  }
+
+  .cartinfo {
+    /* display: block; */
+    flex-direction: column;
+  }
+
+  .itemsincart,
+  .addToCart {
+    width: auto;
+  }
+
+  .mobilevisualsPanel  {
+    display:block;
+    position: relative;
+  
+  }
+
+  .mobilevisualsPanel > img {
+    border-radius: 0px;
+    width: 100%;
+    
+  }
+
+  .visualsPanel {
+    display: none;
+  }
+
+  .thumbnailPanel {
+    display: none;
+  }
+
+
+  .left {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 38%;
+    left: 15px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  
+  .left > img {
+    padding: 20px;
+  }
+  .right > img {
+    padding: 20px;
+  }
+  
+  .left > img:hover {
+    filter: invert(63%) sepia(59%) saturate(4566%) hue-rotate(348deg)
+      brightness(104%) contrast(101%);
+  }
+  .right > img:hover {
+    padding: 60px;
+    filter: invert(63%) sepia(59%) saturate(4566%) hue-rotate(348deg)
+      brightness(104%) contrast(101%);
+  }
+  
+  .right {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 38%;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  
   
 }

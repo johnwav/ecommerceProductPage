@@ -34,7 +34,8 @@ export const Navbar = () => {
         </button>
       </div>
 
-      <div className={isActive ? styles.toggle : styles.cartdropdown}>
+      {/* <div className={isActive ? styles.toggle : styles.cartdropdown}> */}
+      <div className={styles.cartdropdown}>
         <div className={styles.cartLabel}>Cart</div>
         <div className={styles.line}></div>
         <div className={styles.cartInfo}>
@@ -55,7 +56,7 @@ export const Navbar = () => {
               <button className={styles.checkoutBtn}>Checkout</button>
             </div>
           ) : (
-            <div>Your cart is empty.</div>
+            <div className={styles.empty} >Your cart is empty.</div>
           )}
         </div>
       </div>
