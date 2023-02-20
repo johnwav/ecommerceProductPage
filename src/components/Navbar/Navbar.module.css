@@ -10,14 +10,6 @@
   border-bottom: 0.2px solid hsl(220, 14%, 75%);
 }
 
-
-
-.menu {
-  display: none;
-}
-
-
-
 .logo {
   padding-right: 3vw;
 }
@@ -38,6 +30,7 @@
   gap: 46px;
   padding-right: 0px;
 }
+
 .options > button {
   position: relative;
 }
@@ -136,7 +129,65 @@
   font-weight: 600;
 }
 
+.side {
+  display: none;
+}
+
+.menu1 {
+  display: none;
+}
+
 @media only screen and (max-width: 845px) {
+  .side {
+    display: block;
+  }
+
+  .menu1 {
+    display: block;
+  }
+
+ 
+
+  .menu {
+    margin: 0;
+    overflow: hidden;
+    display: none;
+    font-size: 20px;
+    font-weight: 600;
+    width: 70dvw;
+    height: 100dvh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 102;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    padding-left: 26px;
+  }
+
+  .menu > li {
+    letter-spacing: 1px;
+  }
+
+  .menu > button {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: 20px;
+  }
+  .mobileMenu {
+    margin: 0;
+    top: 0px;
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 100dvh;
+    background-color: grey;
+    opacity: 0.8;
+    z-index: 101;
+  }
+
   .container {
     height: 74px;
   }
@@ -149,10 +200,6 @@
     padding-left: 30px;
   }
 
-  .menu {
-    display: contents;
-  }
-
   .cartdropdown {
     z-index: 9;
     width: 98%;
@@ -163,9 +210,7 @@
     background-color: white;
     position: absolute;
     right: 6px;
-
     top: 84px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
