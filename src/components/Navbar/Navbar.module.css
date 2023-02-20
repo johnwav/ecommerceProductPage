@@ -10,6 +10,14 @@
   border-bottom: 0.2px solid hsl(220, 14%, 75%);
 }
 
+
+
+.menu {
+  display: none;
+}
+
+
+
 .logo {
   padding-right: 3vw;
 }
@@ -136,6 +144,15 @@
   .nav > li {
     display: none;
   }
+
+  .nav {
+    padding-left: 30px;
+  }
+
+  .menu {
+    display: contents;
+  }
+
   .cartdropdown {
     z-index: 9;
     width: 98%;
